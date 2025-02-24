@@ -18,9 +18,9 @@ services:
       CUSTOM_ROLES: "broker,controller"
       CUSTOM_CONTROLLER_QUORUM_VOTERS: "1@kafka1:19093,2@kafka2:29093,3@kafka3:39093"
       CUSTOM_INTER_BROKER_LISTENER_NAME: "BROKER"
-      JMX_PORT: 19999
-      KAFKA_JMX_OPTS: "-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
-      KAFKA_OPTS: "-javaagent:/opt/kafka/jmx_prometheus_javaagent.jar=17071:/opt/kafka/jmx-prom-java-agent-config.yaml"
+      #JMX_PORT: 19999
+      #KAFKA_JMX_OPTS: "-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
+      #KAFKA_OPTS: "-javaagent:/opt/kafka/jmx_prometheus_javaagent.jar=17071:/opt/kafka/jmx-prom-java-agent-config.yaml"
     ports:
       - 18092:18092
       - 19092:19092
@@ -43,9 +43,9 @@ services:
       CUSTOM_ROLES: "broker,controller"
       CUSTOM_CONTROLLER_QUORUM_VOTERS: "1@kafka1:19093,2@kafka2:29093,3@kafka3:39093"
       CUSTOM_INTER_BROKER_LISTENER_NAME: "BROKER"
-      JMX_PORT: 29999
-      KAFKA_JMX_OPTS: "-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
-      KAFKA_OPTS: "-javaagent:/opt/kafka/jmx_prometheus_javaagent.jar=27071:/opt/kafka/jmx-prom-java-agent-config.yaml"
+      #JMX_PORT: 29999
+      #KAFKA_JMX_OPTS: "-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
+      #KAFKA_OPTS: "-javaagent:/opt/kafka/jmx_prometheus_javaagent.jar=27071:/opt/kafka/jmx-prom-java-agent-config.yaml"
     ports:
       - 28092:28092
       - 29092:29092
@@ -68,9 +68,9 @@ services:
       CUSTOM_ROLES: "broker,controller"
       CUSTOM_CONTROLLER_QUORUM_VOTERS: "1@kafka1:19093,2@kafka2:29093,3@kafka3:39093"
       CUSTOM_INTER_BROKER_LISTENER_NAME: "BROKER"
-      JMX_PORT: 39999
-      KAFKA_JMX_OPTS: "-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
-      KAFKA_OPTS: "-javaagent:/opt/kafka/jmx_prometheus_javaagent.jar=37071:/opt/kafka/jmx-prom-java-agent-config.yaml"
+      #JMX_PORT: 39999
+      #KAFKA_JMX_OPTS: "-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
+      #KAFKA_OPTS: "-javaagent:/opt/kafka/jmx_prometheus_javaagent.jar=37071:/opt/kafka/jmx-prom-java-agent-config.yaml"
     ports:
       - 38092:38092
       - 39092:39092
